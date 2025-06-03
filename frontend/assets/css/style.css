@@ -532,3 +532,7 @@ nav.main-nav ul li a:hover {
     padding: 0 2px;
   }
 }
+/* إظهار فقط أيقونة السلة وإخفاء باقي الأيقونات */
+.header-icons button:not([title="عربة التسوق"]) {
+  display: none !important;
+}
