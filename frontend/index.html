@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المخبر الدوائي | نرعاكم بصحة واهتمام</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- أيقونات الهيدر أعلى اليسار -->
+  <div class="header-icons" style="position:absolute;top:18px;left:24px;z-index:100;">
+    <button title="العين">👁</button>
+    <button title="المفضلة">❤</button>
+    <button title="المقارنة">🔁</button>
+    <button title="عربة التسوق">🛒</button>
+  </div>
+
+  <!-- القائمة المنسدلة أعلى اليمين -->
+  <div class="dropdown" style="position:absolute;top:18px;right:24px;z-index:100;">
+    <button class="dropbtn" style="background:#2285a0;color:#fff;padding:8px 18px;border-radius:7px;font-weight:bold;border:none;cursor:pointer;">القائمة ☰</button>
+    <div class="dropdown-content" style="display:none;position:absolute;right:0;background:#fff;min-width:160px;box-shadow:0 8px 16px #0002;border-radius:8px;">
+      <a href="index.html" style="color:#2285a0;padding:12px 16px;display:block;text-decoration:none;">الرئيسية</a>
+      <a href="clinic/nutrition/index.html" style="color:#2285a0;padding:12px 16px;display:block;text-decoration:none;">التغذية</a>
+      <a href="pages/contact/index.html" style="color:#2285a0;padding:12px 16px;display:block;text-decoration:none;">اتصل بنا</a>
+    </div>
+  </div>
+
+  <!-- الهيدر الرئيسي -->
+  <header class="main-header" id="mainHeader">
+    <div class="top-bar" id="headerContent" style="flex-direction:column;align-items:center;gap:0;">
+      <!-- لوجو كبير في الأعلى -->
+      <div class="logo" style="margin: 2rem 0 1rem 0; display: flex; flex-direction: column; align-items: center;">
+        <img src="assets/images/logo/logo.svg" alt="شعار المخبر الدوائي" style="height:180px;max-width:90vw;">
+        <span class="brand-name" style="font-size:2.2rem;margin-top:0.7rem;">المخبر الدوائي</span>
+      </div>
+      <!-- زر تسجيل طبيب في الأعلى -->
+      <div style="width:100%;display:flex;justify-content:flex-end;max-width:1200px;">
+        <button onclick="window.location.href='forms/registration-form.html'" class="doctor-register-btn" style="margin:0 1rem 1.5rem 0;">تسجيل طبيب</button>
+      </div>
+      <!-- خانة البحث -->
+      <div class="search-box" style="margin-bottom:1.2rem;">
+        <input type="text" placeholder="ابحث عن منتج أو قسم..." />
+        <button>بحث</button>
+      </div>
+    </div>
+    <!-- شريط أقسام الفارماسي داخل الهيدر -->
+    <nav class="pharmacy-categories-nav sticky-categories" id="pharmacyCategories">
+      <ul class="pharmacy-categories-list">
+        <li><a href="pharmacy/skincare/skincare.html">العناية بالبشرة</a></li>
+        <li><a href="pharmacy/haircare/haircare.html">العناية بالشعر</a></li>
+        <li><a href="pharmacy/oral-care/oral.html">العناية بالفم</a></li>
+        <li><a href="pharmacy/mother/mother.html">رعاية الأم</a></li>
+        <li><a href="pharmacy/men-care/men-car.html">رعاية الرجل</a></li>
+        <li><a href="pharmacy/obesity/obesity.html">السمنة</a></li>
+        <li><a href="pharmacy/baby-care/baby.html">رعاية البيبي</a></li>
+        <li><a href="pharmacy/chronic/chronic.html">الأمراض المزمنة</a></li>
+        <li><a href="pharmacy/seasonal/seasonal.html">الأمراض الموسمية</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- الكروت والمحتوى الرئيسي -->
+  <main class="home-content">
+    <section class="section-container">
+      <div class="card">
+        <a href="pharmacy/skincare/skincare.html">
+          <img src="assets/images/cardes/Skin-care.svg" alt="العناية بالبشرة" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">العناية بالبشرة</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/haircare/haircare.html">
+          <img src="assets/images/cardes/hair care.svg" alt="العناية بالشعر" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">العناية بالشعر</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/oral-care/oral.html">
+          <img src="assets/images/cardes/oral-care.svg" alt="العناية بالفم" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">العناية بالفم</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/mother/mother.html">
+          <img src="assets/images/cardes/mother.svg" alt="رعاية الأم" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">رعاية الأم</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/men-care/men-car.html">
+          <img src="assets/images/cardes/men-care.svg" alt="رعاية الرجل" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">رعاية الرجل</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/obesity/obesity.html">
+          <img src="assets/images/cardes/obesity.svg" alt="السمنة" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">السمنة</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/baby-care/baby.html">
+          <img src="assets/images/cardes/baby-care.svg" alt="رعاية البيبي" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">رعاية البيبي</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/chronic/chronic.html">
+          <img src="assets/images/cardes/chronic.svg" alt="الأمراض المزمنة" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">الأمراض المزمنة</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="pharmacy/seasonal/seasonal.html">
+          <img src="assets/images/cardes/seasonal.svg" alt="الأمراض الموسمية" style="width:100%;height:120px;object-fit:cover;">
+          <div class="card-title">الأمراض الموسمية</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/images/logo/logo.svg" alt="شعار الموقع" style="height:40px;">
+        <p class="tagline">نرعاكم بصحة واهتمام</p>
+      </div>
+      <div class="footer-links">
+        <h4>الأقسام</h4>
+        <ul>
+          <li><a href="pharmacy/skincare/skincare.html">العناية بالبشرة</a></li>
+          <li><a href="pharmacy/haircare/haircare.html">العناية بالشعر</a></li>
+          <li><a href="pharmacy/oral-care/oral.html">العناية بالفم</a></li>
+          <li><a href="pharmacy/mother/mother.html">رعاية الأم</a></li>
+          <li><a href="pharmacy/men-care/men-car.html">رعاية الرجل</a></li>
+          <li><a href="pharmacy/obesity/obesity.html">السمنة</a></li>
+          <li><a href="pharmacy/baby-care/baby.html">رعاية البيبي</a></li>
+          <li><a href="pharmacy/chronic/chronic.html">الأمراض المزمنة</a></li>
+          <li><a href="pharmacy/seasonal/seasonal.html">الأمراض الموسمية</a></li>
+        </ul>
+      </div>
+      <div class="footer-pages">
+        <h4>روابط مهمة</h4>
+        <ul>
+          <li><a href="pages/about.html">من نحن</a></li>
+          <li><a href="pages/privacy-policy.html">سياسة الخصوصية</a></li>
+          <li><a href="pages/faq.html">الأسئلة الشائعة</a></li>
+          <li><a href="pages/contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+  <h4>تابعنا</h4>
+  <a href="https://www.facebook.com/share/12FyPC6N3ns/?mibextid=wwXIfr" target="_blank" rel="noopener" title="Facebook">
+    <img src="assets/images/social/facebook.png" alt="Facebook" width="28" height="28">
+  </a>
+  <a href="https://www.instagram.com/phelshakawy?igsh=MW5kYWc0Y251OGZrMQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" title="Instagram">
+    <img src="assets/images/social/instagram.png" alt="Instagram" width="28" height="28">
+  </a>
+  <a href="https://www.tiktok.com/@ahmed_elshkhwy?_t=ZS-8wpyl9QqHLM&_r=1" target="_blank" rel="noopener" title="TikTok">
+    <img src="assets/images/social/tiktok.png" alt="TikTok" width="28" height="28">
+  </a>
+  <a href="https://youtube.com/@ahmed_elshkhwy?si=gPjQA3sfSFk4v9y_" target="_blank" rel="noopener" title="YouTube">
+    <img src="assets/images/social/youtube.png" alt="YouTube" width="28" height="28">
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 جميع الحقوق محفوظة - المخبر الدوائي</p>
+    </div>
+  </footer>
+
+  <script>
+    // القائمة المنسدلة
+    document.addEventListener('DOMContentLoaded', function() {
+      var dropBtn = document.querySelector('.dropbtn');
+      var menu = document.querySelector('.dropdown-content');
+      dropBtn.onclick = function(e) {
+        e.stopPropagation();
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+      };
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+          menu.style.display = 'none';
+        }
+      };
+    });
+
+    // تصغير الهيدر عند النزول
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('mainHeader');
+      const headerContent = document.getElementById('headerContent');
+      if(window.scrollY > 60) {
+        header.classList.add('mini-header');
+      } else {
+        header.classList.remove('mini-header');
+      }
+    });
+  </script>
+</body>
+</html>
