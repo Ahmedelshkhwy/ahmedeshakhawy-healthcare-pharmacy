@@ -503,3 +503,32 @@ nav.main-nav ul li a:hover {
   align-items: flex-start;
   gap: 2rem;
 }
+/* ضبط مكان أيقونات الهيدر على الموبايل */
+.header-icons {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  z-index: 100;
+  display: flex;
+  gap: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  .header-icons {
+    top: 8px;
+    left: 8px;
+    right: auto;
+    gap: 0.1rem;
+    font-size: 1.1rem;
+    /* يمكنك جعلها فوق كل شيء */
+    position: fixed;
+    background: #2285a0e6;
+    padding: 4px 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+  }
+  .header-icons button {
+    font-size: 1.2rem;
+    padding: 0 2px;
+  }
+}
